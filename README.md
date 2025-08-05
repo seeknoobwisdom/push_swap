@@ -25,6 +25,32 @@ You must write:
 
 This implementation is inspired by **Quick Sort**. We simulate pivoting and partitioning using stack operations.
 
+# 🧩 push_swap
+
+`push_swap` is a project from the 42 curriculum that challenges you to sort a stack of integers using only a limited set of stack operations. The goal is to create an optimized algorithm that uses as few instructions as possible.
+
+<div align="center">
+  <img src="https://img.shields.io/badge/Language-C-blue" alt="Language">
+  <img src="https://img.shields.io/badge/Score-100%25-success" alt="Score">
+  <img src="https://img.shields.io/badge/Sorting-Algorithm-Quick_Sort_Based-orange" alt="Quick Sort Based">
+</div>
+
+---
+
+## 🧠 Project Description
+
+You are given a set of integers as input. Your task is to sort them using two stacks (`A` and `B`) and a limited set of instructions such as `sa`, `pb`, `ra`, etc.
+
+You must write:
+- A program `push_swap` that outputs the list of operations to sort the stack.
+- A checker program `checker` that validates if a given sequence of operations results in a sorted stack.
+
+---
+
+## 🚀 How It Works
+
+This implementation is inspired by **Quick Sort**. We simulate pivoting and partitioning using stack operations.
+
 ### 🔁 Key Strategy
 
 1. **Normalize Input**: Convert each number into its index in the sorted order (0-based).
@@ -47,11 +73,3 @@ flowchart TD
     F --> G[Push back from B to A]
     G --> H[Done: A is sorted]
 
-You are given:
-- Stack `A`: a list of unsorted integers
-- Stack `B`: initially empty
-
-You must **sort stack A** in ascending order **with the fewest operations** possible using only:
-
-```text
-sa  sb  ss  pa  pb  ra  rb  rr  rra  rrb  rrr
