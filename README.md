@@ -11,30 +11,6 @@ In this implementation, a **non-recursive Quick Sort-based strategy** is used to
 
 ---
 
-## 🧠 Project Description
-
-You are given a set of integers as input. Your task is to sort them using two stacks (`A` and `B`) and a limited set of instructions such as `sa`, `pb`, `ra`, etc.
-
-You must write:
-- A program `push_swap` that outputs the list of operations to sort the stack.
-- A checker program `checker` that validates if a given sequence of operations results in a sorted stack.
-
----
-
-## 🚀 How It Works
-
-This implementation is inspired by **Quick Sort**. We simulate pivoting and partitioning using stack operations.
-
-<div align="center">
-  <img src="https://img.shields.io/badge/Language-C-blue" alt="Language">
-  <img src="https://img.shields.io/badge/Score-100%25-success" alt="Score">
-  <img src="https://img.shields.io/badge/Sorting-Algorithm-Quick_Sort_Based-orange" alt="Quick Sort Based">
-</div>
-
----
-
-## 🧠 Project Description
-
 You are given a set of integers as input. Your task is to sort them using two stacks (`A` and `B`) and a limited set of instructions such as `sa`, `pb`, `ra`, etc.
 
 You must write:
