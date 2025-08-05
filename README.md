@@ -47,11 +47,6 @@ flowchart TD
     F --> G[Push back from B to A]
     G --> H[Done: A is sorted]
 
-
-## 🧩 About
-
-> The challenge: **Sort integers using only push, swap, rotate, and reverse rotate.**
-
 You are given:
 - Stack `A`: a list of unsorted integers
 - Stack `B`: initially empty
