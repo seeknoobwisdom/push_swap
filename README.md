@@ -25,10 +25,6 @@ You must write:
 
 This implementation is inspired by **Quick Sort**. We simulate pivoting and partitioning using stack operations.
 
-# 🧩 push_swap
-
-`push_swap` is a project from the 42 curriculum that challenges you to sort a stack of integers using only a limited set of stack operations. The goal is to create an optimized algorithm that uses as few instructions as possible.
-
 <div align="center">
   <img src="https://img.shields.io/badge/Language-C-blue" alt="Language">
   <img src="https://img.shields.io/badge/Score-100%25-success" alt="Score">
@@ -58,18 +54,4 @@ This implementation is inspired by **Quick Sort**. We simulate pivoting and part
 3. **Repeat With Chunks**: Keep partitioning recursively (iteratively).
 4. **Sort Small Groups**: Use hardcoded logic for small sizes (3–5 elements).
 5. **Push Back from B to A**: Find max in B, rotate it to top, then `pa`.
-
----
-
-### 📊 Quick Sort Simulation
-
-```mermaid
-flowchart TD
-    A[Start in Stack A] --> B[Choose Pivot]
-    B --> C[Push < pivot to B]
-    C --> D[Rotate > pivot in A]
-    D --> E[Repeat with Chunks]
-    E --> F[Sort base cases (3, 5)]
-    F --> G[Push back from B to A]
-    G --> H[Done: A is sorted]
 
