@@ -11,6 +11,42 @@ In this implementation, a **non-recursive Quick Sort-based strategy** is used to
 
 ---
 
+## 🧠 Project Description
+
+You are given a set of integers as input. Your task is to sort them using two stacks (`A` and `B`) and a limited set of instructions such as `sa`, `pb`, `ra`, etc.
+
+You must write:
+- A program `push_swap` that outputs the list of operations to sort the stack.
+- A checker program `checker` that validates if a given sequence of operations results in a sorted stack.
+
+---
+
+## 🚀 How It Works
+
+This implementation is inspired by **Quick Sort**. We simulate pivoting and partitioning using stack operations.
+
+### 🔁 Key Strategy
+
+1. **Normalize Input**: Convert each number into its index in the sorted order (0-based).
+2. **Partition Using Pivots**: Push elements < pivot to stack B using `pb`, rotate others in A using `ra`.
+3. **Repeat With Chunks**: Keep partitioning recursively (iteratively).
+4. **Sort Small Groups**: Use hardcoded logic for small sizes (3–5 elements).
+5. **Push Back from B to A**: Find max in B, rotate it to top, then `pa`.
+
+---
+
+### 📊 Quick Sort Simulation
+
+```mermaid
+flowchart TD
+    A[Start in Stack A] --> B[Choose Pivot]
+    B --> C[Push < pivot to B]
+    C --> D[Rotate > pivot in A]
+    D --> E[Repeat with Chunks]
+    E --> F[Sort base cases (3, 5)]
+    F --> G[Push back from B to A]
+    G --> H[Done: A is sorted]
+
 
 ## 🧩 About
 
